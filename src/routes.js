@@ -20,5 +20,9 @@ router.post(
   '/contacts',
   ContactController.store,
 );
+router.put(
+  '/contacts/:id',
+  ContactController.update,
+);
 
 module.exports = router;
